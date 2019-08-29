@@ -8,17 +8,17 @@ namespace Gestion_de_equipos_de_beisbol
 {
     class Equipo
     {
-        public string Nombre { get; set; }
-        public string CiudadDeOrigen { get; set; }
-        public string Entrenador { get; set; }
-        public string Jugadores { get; set; }
+        public string Nombre;
+        public string ciudaddeorigen;
+        public string entrenador;
+        public List<Jugador> jugadores;
 
         public Equipo ()
         {
-            Nombre = "Descinocido";
-            CiudadDeOrigen = "Desconocido";
-            Entrenador = "Desconocido";
-            Jugadores = new List<Jugador>();
+            Nombre = "Desconocido";
+            ciudaddeorigen = "Desconocido";
+            entrenador = "Desconocido";
+            jugadores = new List<Jugador>();
         }
 
         public Equipo(string nombre)
@@ -26,7 +26,7 @@ namespace Gestion_de_equipos_de_beisbol
             Nombre = nombre;
             ciudaddeorigen = "Desconocido";
             entrenador = "Desconocido";
-            Jugadores = new List<Jugador>();
+            jugadores = new List<Jugador>();
         }
     }
 }

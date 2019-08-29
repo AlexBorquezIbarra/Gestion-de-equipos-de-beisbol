@@ -13,8 +13,8 @@ namespace Gestion_de_equipos_de_beisbol
 
         public Jugador ()
         {
-            Nombre = "No asignado";
-            Numero = "No asignado";
+            Nombre = "Jugador sin nombre";
+            Numero = "Desconocido";
         }
 
         public Jugador (string nombre)
